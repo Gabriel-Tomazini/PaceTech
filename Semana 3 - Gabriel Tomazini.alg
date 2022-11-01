@@ -1,20 +1,20 @@
 algoritmo "Projeto semana 3"
-// FunÁ„o : Aumento do sal·rio de 30%
+// Fun√ß√£o : Aumento do sal√°rio de 30%
 // Autor : Gabriel Tomazini
 // Data : 28/10/2022
-// SeÁ„o de DeclaraÁıes 
+// Se√ß√£o de Declara√ß√µes 
 var
 
 salario, salarioFinal : real
 
 inicio
 
-escreval ("Informe o seu sal·rio base: ")
+escreval ("Informe o seu sal√°rio base: ")
     leia (salario)
 
 salarioFinal <- salario * 1.3
 
-escreva ("Seu sal·rio com o aumento ser· de: ", salarioFinal)
+escreva ("Seu sal√°rio com o aumento ser√° de: ", salarioFinal:1:2)
 
 
 
