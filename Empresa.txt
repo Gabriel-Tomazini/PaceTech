@@ -7,11 +7,9 @@ opMenu : inteiro
 
 inicio
 
-escreval("Qual a contaÁ„o do dolar no momento?")
+escreval("Qual a conta√ß√£o do dolar no momento?")
 leia(cotD)
 limpatela
-
-se opMenu = VERDADEIRO entao
 
    repita
 
@@ -25,11 +23,11 @@ se opMenu = VERDADEIRO entao
 
       se opMenu = 1 entao
 
-         escreval("Quantos graus Celcius ser„o convertidos para Fahrenheit?")
+         escreval("Quantos graus Celcius ser√£o convertidos para Fahrenheit?")
          leia(quantC)
          quantF <- (quantC * 1.8) + 32//procurei na internet e era isso que aparecia
          limpatela
-         escreval("Est„o ",quantF, "∞ Fahrenheit no momento.")
+         escreval("Est√£o ",quantF:1:2, "¬∞ Fahrenheit no momento.")
          escreval("-----------------------------------------------------------------------------------------------------------------------------")
          escreval(" ")
 
@@ -37,11 +35,11 @@ se opMenu = VERDADEIRO entao
 
       se opMenu = 2 entao
 
-         escreval("Quantos graus Fahrenheit ser„o convertidos para Celcius?")
+         escreval("Quantos graus Fahrenheit ser√£o convertidos para Celcius?")
          leia(quantF)
          quantC <- (quantF - 32 ) / 1.8
          limpatela
-         escreval("Est„o ",quantC, "∞ Celcius no momento.")
+         escreval("Est√£o ",quantC:1:2, "¬∞ Celcius no momento.")
          escreval("-----------------------------------------------------------------------------------------------------------------------------")
          escreval(" ")
 
@@ -49,11 +47,11 @@ se opMenu = VERDADEIRO entao
 
       se opMenu = 3 entao
 
-         escreval("Quantos Reais vocÍ quer converter")
+         escreval("Quantos Reais voc√™ quer converter")
          leia(quantR)
          resultadoEmD <- quantR / cotD
          limpatela
-         escreval("VocÍ ter· ",resultadoEmD, " Dolares")
+         escreval("Voc√™ ter√° ",resultadoEmD:1:2, " Dolares")
          escreval("-----------------------------------------------------------------------------------------------------------------------------")
          escreval(" ")
 
@@ -61,17 +59,17 @@ se opMenu = VERDADEIRO entao
 
       se opMenu = 4 entao
 
-         escreval("Quantos Dolares vocÍ quer converter")
+         escreval("Quantos Dolares voc√™ quer converter")
          leia(quantD)
          resultadoEmR <- quantD * cotD
          limpatela
-         escreval("VocÍ ter· ",resultadoEmR, " Reais")
+         escreval("Voc√™ ter√° ",resultadoEmR:1:2, " Reais")
          escreval("-----------------------------------------------------------------------------------------------------------------------------")
          escreval(" ")
 
       fimse
 
-      escreval("5 - Fazer mais Conversıes")
+      escreval("5 - Fazer mais Convers√µes")
       escreval("6 - Parar")
       leia(opMenu)
 
@@ -81,12 +79,10 @@ se opMenu = VERDADEIRO entao
 
       se opMenu = 6 entao
          limpatela
-         escreval("Obrigado pela PreferÍncia <3")
+         escreval("Obrigado pela Prefer√™ncia <3")
          interrompa
       fimse
 
       fimrepita
-
-   fimse
    
 fimalgoritmo
