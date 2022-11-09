@@ -51,7 +51,7 @@ limpatela
          leia(quantR)
          resultadoEmD <- quantR / cotD
          limpatela
-         escreval("Você terá ",resultadoEmD:1:2, " Dolares")
+         escreval("Você terá ",resultadoEmD:1:2, " de Dolares")
          escreval("-----------------------------------------------------------------------------------------------------------------------------")
          escreval(" ")
 
@@ -63,7 +63,7 @@ limpatela
          leia(quantD)
          resultadoEmR <- quantD * cotD
          limpatela
-         escreval("Você terá ",resultadoEmR:1:2, " Reais")
+         escreval("Você terá ",resultadoEmR:1:2, " de Reais")
          escreval("-----------------------------------------------------------------------------------------------------------------------------")
          escreval(" ")
 
