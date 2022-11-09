@@ -71,6 +71,7 @@ limpatela
 
       escreval("5 - Fazer mais Conversões")
       escreval("6 - Parar")
+      escreval(" ")
       leia(opMenu)
 
       se opMenu = 5 entao
