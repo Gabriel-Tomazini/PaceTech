@@ -13,11 +13,11 @@ limpatela
 
    repita
 
-      escreval("1 - Celcius para Fahrenheit")
-      escreval("2 - Fahrenheit para Celcius")
-      escreval("3 - Reais para Dolar")
-      escreval("4 - Dolar para Reais")
-      escreval("Aperte Esc para sair")
+      escreval("1 - Celcius para Fahrenheit.")
+      escreval("2 - Fahrenheit para Celcius.")
+      escreval("3 - Reais para Dolar.")
+      escreval("4 - Dolar para Reais.")
+      escreval("Aperte Esc para sair.")
       leia(opMenu)
       limpatela
 
@@ -25,7 +25,7 @@ limpatela
 
          escreval("Quantos graus Celcius serão convertidos para Fahrenheit?")
          leia(quantC)
-         quantF <- (quantC * 1.8) + 32//procurei na internet e era isso que aparecia
+         quantF <- (quantC * 1.8) + 32
          limpatela
          escreval("Estão ",quantF:1:2, "° Fahrenheit no momento.")
          escreval("-----------------------------------------------------------------------------------------------------------------------------")
@@ -47,11 +47,11 @@ limpatela
 
       se opMenu = 3 entao
 
-         escreval("Quantos Reais você quer converter")
+         escreval("Quantos Reais você quer converter.")
          leia(quantR)
          resultadoEmD <- quantR / cotD
          limpatela
-         escreval("Você terá ",resultadoEmD:1:2, " de Dolares")
+         escreval("Você terá ",resultadoEmD:1:2, " de Dolares.")
          escreval("-----------------------------------------------------------------------------------------------------------------------------")
          escreval(" ")
 
@@ -59,18 +59,18 @@ limpatela
 
       se opMenu = 4 entao
 
-         escreval("Quantos Dolares você quer converter")
+         escreval("Quantos Dolares você quer converter.")
          leia(quantD)
          resultadoEmR <- quantD * cotD
          limpatela
-         escreval("Você terá ",resultadoEmR:1:2, " de Reais")
+         escreval("Você terá ",resultadoEmR:1:2, " de Reais.")
          escreval("-----------------------------------------------------------------------------------------------------------------------------")
          escreval(" ")
 
       fimse
 
-      escreval("5 - Fazer mais Conversões")
-      escreval("6 - Parar")
+      escreval("5 - Fazer mais Conversões.")
+      escreval("6 - Parar.")
       escreval(" ")
       leia(opMenu)
 
