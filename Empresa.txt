@@ -85,5 +85,5 @@ limpatela
       fimse
 
       fimrepita
-   
+    
 fimalgoritmo
