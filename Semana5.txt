@@ -3,7 +3,6 @@ algoritmo "Semana 5"
 // Autor :
 // Data : 16/11/2022
 // Seção de Declarações
-//NÃO CONSEGUI BOTAR O VETOR EM ORDEM
 var
 
 quantC, quantF, convC, convF, quantR, quantD, resultadoEmR, resultadoEmD,cotD, hora : real
@@ -98,9 +97,36 @@ fimprocedimento
 procedimento mostrarHistorico()
 var
 
-i : inteiro
+i,j : inteiro
+aux : real
 
 inicio
+
+para i de 1 ate 4 faca
+   para j de i+1 ate 4 faca
+   
+      se vetTC[i] > vetTC[j] entao
+      
+         aux <- vetTC[i]
+         vetTC[i] <- vetTC[j]
+         vetTC[j] <- aux
+         
+      fimse
+      
+   fimpara
+fimpara
+
+para i de 1 ate 4 faca
+   para j de i+1 ate 4 faca
+      se vetTF[i] > vetTF[j] entao
+         aux <- vetTF[i]
+         vetTF[i] <- vetTF[j]
+         vetTF[j] <- aux
+      fimse
+   fimpara
+fimpara
+
+//NÃO CONSEGUI FAZER A HORA APARECER NO LUGAR CORRETO 
 
 para i de 1 ate 4 faca
 
