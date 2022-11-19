@@ -118,11 +118,15 @@ fimpara
 
 para i de 1 ate 4 faca
    para j de i+1 ate 4 faca
+   
       se vetTF[i] > vetTF[j] entao
+      
          aux <- vetTF[i]
          vetTF[i] <- vetTF[j]
          vetTF[j] <- aux
+         
       fimse
+      
    fimpara
 fimpara
 
