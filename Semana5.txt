@@ -1,8 +1,9 @@
 algoritmo "Semana 5"
-// Função :
+// FunÃ§Ã£o :
 // Autor :
 // Data : 16/11/2022
-// Seção de Declarações
+// SeÃ§Ã£o de DeclaraÃ§Ãµes
+//NÃƒO CONSEGUI BOTAR O VETOR EM ORDEM
 var
 
 quantC, quantF, convC, convF, quantR, quantD, resultadoEmR, resultadoEmD,cotD, hora : real
@@ -12,7 +13,7 @@ vetH, vetTC, vetTF : vetor[1..4] de real
 procedimento cotacao()
 inicio
 
-escreval("Qual a contação do dolar no momento?")
+escreval("Qual a contaÃ§Ã£o do dolar no momento?")
 leia(cotD)
 limpatela
 
@@ -25,7 +26,7 @@ escreval("1 - Celcius para Fahrenheit.")
 escreval("2 - Fahrenheit para Celcius.")
 escreval("3 - Reais para Dolar.")
 escreval("4 - Dolar para Reais.")
-escreval("5 - Histórico.")
+escreval("5 - HistÃ³rico.")
 escreval("Aperte Esc para sair.")
 leia(opMenu)
 limpatela
@@ -35,8 +36,8 @@ fimprocedimento
 procedimento menuGuardar()
 inicio
 
-escreval("1 - Gostaria de armazenar o horário e a temperatura?")
-escreval("2 - Não quero guarda o horário e a temperatura.")
+escreval("1 - Gostaria de armazenar o horÃ¡rio e a temperatura?")
+escreval("2 - NÃ£o quero guarda o horÃ¡rio e a temperatura.")
 escreval(" ")
 leia(opMenuE)
 limpatela
@@ -103,7 +104,7 @@ inicio
 
 para i de 1 ate 4 faca
 
-   escreval("Temperatura: ", vetTC[i]:1:2, "° celsius. As ", vetH[i]:1:2, " horas. Correspondem a ", vetTF[i]:1:2, "° Fahrenheit.")
+   escreval("Temperatura: ", vetTC[i]:1:2, "Â° celsius. As ", vetH[i]:1:2, " horas. Correspondem a ", vetTF[i]:1:2, "Â° Fahrenheit.")
 
 fimpara
 escreval("-----------------------------------------------------------------------------------------------------------------------------")
@@ -113,7 +114,7 @@ fimprocedimento
 procedimento menuFinal()
 inicio
 
-escreval("1 - Fazer mais Conversões.")
+escreval("1 - Fazer mais ConversÃµes.")
 escreval("2 - Parar.")
 escreval(" ")
 leia(opMenu)
@@ -132,52 +133,52 @@ repita
 
    caso 1
 
-      escreval("Quantos graus Celcius serão convertidos para Fahrenheit?")
+      escreval("Quantos graus Celcius serÃ£o convertidos para Fahrenheit?")
       leia(quantC)
       quantF <- (quantC * 1.8) + 32
       limpatela
-      escreval("Estão ",quantF:1:2, "° Fahrenheit no momento.")
+      escreval("EstÃ£o ",quantF:1:2, "Â° Fahrenheit no momento.")
       escreval("-----------------------------------------------------------------------------------------------------------------------------")
       escreval(" ")
 
    caso 2
 
-      escreval("Quantos graus Fahrenheit serão convertidos para Celcius?")
+      escreval("Quantos graus Fahrenheit serÃ£o convertidos para Celcius?")
       leia(quantF)
       quantC <- (quantF - 32 ) / 1.8
       limpatela
-      escreval("Estão ",quantC:1:2, "° Celcius no momento.")
+      escreval("EstÃ£o ",quantC:1:2, "Â° Celcius no momento.")
       escreval("-----------------------------------------------------------------------------------------------------------------------------")
       escreval(" ")
 
    caso 3
 
-      escreval("Quantos Reais você quer converter.")
+      escreval("Quantos Reais vocÃª quer converter.")
       leia(quantR)
       resultadoEmD <- quantR / cotD
       limpatela
-      escreval("Você terá ",resultadoEmD:1:2, " de Dolares.")
+      escreval("VocÃª terÃ¡ ",resultadoEmD:1:2, " de Dolares.")
       escreval("-----------------------------------------------------------------------------------------------------------------------------")
       escreval(" ")
 
    caso 4
 
-      escreval("Quantos Dolares você quer converter.")
+      escreval("Quantos Dolares vocÃª quer converter.")
       leia(quantD)
       resultadoEmR <- quantD * cotD
       limpatela
-      escreval("Você terá ",resultadoEmR:1:2, " de Reais.")
+      escreval("VocÃª terÃ¡ ",resultadoEmR:1:2, " de Reais.")
       escreval("-----------------------------------------------------------------------------------------------------------------------------")
       escreval(" ")
 
    caso 5
-      escreval("O histórico de hoje.")
+      escreval("O histÃ³rico de hoje.")
       mostrarHistorico()
       escreval("")
 
    outrocaso
 
-      escreval("Escolha uma opção valida")
+      escreval("Escolha uma opÃ§Ã£o valida")
       escreval("-----------------------------------------------------------------------------------------------------------------------------")
       escreval(" ")
 
@@ -192,11 +193,11 @@ repita
       caso 1
          se opMenuE = 1 entao
 
-            escreval("Qual o horário em que foi feita a converção?")
+            escreval("Qual o horÃ¡rio em que foi feita a converÃ§Ã£o?")
             escreval(" ")
             leia(hora)
             limpatela
-            escreval("Temperatura: ", quantC:1:2, "° celsius, registrada as ", hora:1:2, ". Corresponde à ", quantF:1:2, "° fahrenheit")
+            escreval("Temperatura: ", quantC:1:2, "Â° celsius, registrada as ", hora:1:2, ". Corresponde Ã  ", quantF:1:2, "Â° fahrenheit")
             escreval("-----------------------------------------------------------------------------------------------------------------------------")
             escreval(" ")
             guardarTempC()
@@ -205,11 +206,11 @@ repita
 
          senao
 
-            escreval("Qual o horário em que foi feita a converção?")
+            escreval("Qual o horÃ¡rio em que foi feita a converÃ§Ã£o?")
             escreval(" ")
             leia(hora)
             limpatela
-            escreval("Temperatura: ", quantF:1:2, "° fahrenheit, registrada as ", hora:1:2, ". Corresponde à ", quantC:1:2, "° celsius")
+            escreval("Temperatura: ", quantF:1:2, "Â° fahrenheit, registrada as ", hora:1:2, ". Corresponde Ã  ", quantC:1:2, "Â° celsius")
             escreval("-----------------------------------------------------------------------------------------------------------------------------")
             escreval(" ")
             guardarTempC()
@@ -236,12 +237,12 @@ repita
    caso 2
 
       limpatela
-      escreval("Obrigado pela Preferência <3")
+      escreval("Obrigado pela PreferÃªncia <3")
       interrompa
 
    outrocaso
 
-      escreval("Escolha uma opção valida")
+      escreval("Escolha uma opÃ§Ã£o valida")
 
    fimescolha
 
