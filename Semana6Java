@@ -1,0 +1,139 @@
+package Semana6;
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class Main {
+ 
+    public static void main(String[] args) {
+    
+    double quantC, quantF, convC, convF, quantR, quantD, resultadoEmR, resultadoEmD, cotD; 
+    int opMenu;
+         
+    Scanner l = new Scanner(System.in);
+    DecimalFormat deci = new DecimalFormat("0.00");
+    
+    System.out.print("Qual a cota��o do d�lar?\n");
+    cotD = l.nextFloat();
+    
+    limpaTela();
+    
+    do{
+    
+    System.out.print("|-----------------------------|\n");
+    System.out.print("| 1 - Celcius para Fahrenheit.|\n");
+    System.out.print("| 2 - Fahrenheit para Celcius.|\n");
+    System.out.print("| 3 - Reais para Dolar.       |\n");
+    System.out.print("| 4 - Dolar para Reais.       |\n");
+    System.out.print("| 5 - Sair.                   |\n");
+    System.out.print("|-----------------------------|\n");
+    System.out.print("Digite uma op��o: \n");
+    opMenu = l.nextInt();
+         
+        limpaTela();
+        
+        if (opMenu == 1)
+        {
+            System.out.print("|--------------------------------------------------------|\n");
+            System.out.print("|Quantos graus Celcius ser�o convertidos para Fahrenheit?|\n");
+            System.out.print("|--------------------------------------------------------|\n");
+            quantC = l.nextFloat();
+            
+            quantF = (quantC * 1.8) + 32;
+            
+            limpaTela();
+            
+            System.out.print("Est�o " + deci.format(quantF) + "� Fahrenheit no momento.\n");
+            System.out.print("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
+            System.out.print(" ");
+        }
+        
+        if (opMenu == 2)
+        {
+            System.out.print("|--------------------------------------------------------|\n");
+            System.out.print("|Quantos graus Fahrenheit ser�o convertidos para Celcius?|\n");
+            System.out.print("|--------------------------------------------------------|\n");
+            quantF = l.nextFloat();
+            
+            quantC = (quantF - 32 ) / 1.8;
+            
+            limpaTela();
+            
+            System.out.print(" Est�o " + deci.format(quantC) + "� Celcius no momento.   \n");
+            System.out.print("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
+            System.out.print(" ");
+        }
+        
+        if (opMenu == 3)
+        {
+            System.out.print("|-----------------------------------|\n");
+            System.out.print("|Quantos Reais voc� quer converter. |\n");
+            System.out.print("|-----------------------------------|\n");
+            quantR = l.nextFloat();
+            
+            resultadoEmD = quantR / cotD;
+            
+            limpaTela();
+            
+            System.out.print(" Voc� ter� " + deci.format(resultadoEmD) + " de Dolares.  \n");
+            System.out.print("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
+            System.out.print(" ");
+        }
+        
+        if (opMenu == 4)
+        {
+            System.out.print("|------------------------------------|\n");
+            System.out.print("|Quantos Dolares voc� quer converter.|\n");
+            System.out.print("|------------------------------------|\n");
+            quantD = l.nextFloat();
+            
+            resultadoEmR = quantD * cotD;
+            
+            limpaTela();
+            
+            System.out.print(" Voc� ter� " + deci.format(resultadoEmR) + " de Dolares.  \n");
+            System.out.print("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
+            System.out.print(" ");
+        }
+        
+        if (opMenu == 5)
+        {
+            limpaTela();
+            
+            System.out.print("|-----------------------------|\n");
+            System.out.print("| Obrigado pela Prefer�ncia <3|\n");
+            System.out.print("|-----------------------------|\n");
+            System.exit(0);
+        }
+        
+        System.out.print("|-----------------------------|\n");
+        System.out.print(" | 5 - Sair                    |\n");
+        System.out.print(" | 6 - Fazer mais Convers�es.  |\n");
+        System.out.print(" |-----------------------------|\n");
+        opMenu = l.nextInt();
+        
+        limpaTela();
+        
+        if (opMenu == 5)
+        {
+            limpaTela();
+            
+            System.out.print("|-----------------------------|\n");
+            System.out.print("| Obrigado pela Prefer�ncia <3|\n");
+            System.out.print("|-----------------------------|\n");
+            System.exit(0);
+        }
+        
+        if (opMenu == 6)
+        {
+            limpaTela();
+        }
+  }while(opMenu != 0);
+ } 
+    public static void limpaTela(){
+        for (int i = 0; i <= 25; i++) 
+        {
+            System.out.println("\n");
+        }
+    }
+}
