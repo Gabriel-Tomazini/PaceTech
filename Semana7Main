@@ -25,7 +25,7 @@ public class Semana7 {
                     + "|\n");
             System.out.print("| 1 - Cadastrar nome e sal�rio do funcion�rio."
                     + "|\n");
-            System.out.print("| 2 - Sal�rio.                                "
+            System.out.print("| 2 - Lista de funcionários com salário.      "
                     + "|\n");
             System.out.print("| 3 - Sair.                                   "
                     + "|\n");
