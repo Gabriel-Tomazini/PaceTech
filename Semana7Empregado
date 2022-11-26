@@ -32,6 +32,5 @@ public class Empregado {
         else{
             this.salario = salario;
         }
-    }
-    
+    }  
 }
