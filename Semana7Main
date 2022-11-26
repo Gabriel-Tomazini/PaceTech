@@ -1,99 +1,36 @@
 package Semana7;
 
-import java.util.Scanner;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
+public class Empregado {
 
-public class Semana7 {
-
-    public static void main(String[] args) {
-
-        int opMenu;
+    private String nome, sobreNome;
+    private float salario;
+    
+    public Empregado() {
         
-        ArrayList<String> nomes = new ArrayList<>();
-        ArrayList<String> sobrenomes = new ArrayList<>();
-        ArrayList<Float> salarios = new ArrayList<>();
-
-        Scanner L = new Scanner(System.in);
-        DecimalFormat deci = new DecimalFormat("0,00");
-
-        Empregado e = new Empregado();
-
-        do {
-
-            System.out.print("|---------------------------------------------"
-                    + "|\n");
-            System.out.print("| 1 - Cadastrar nome e sal�rio do funcion�rio."
-                    + "|\n");
-            System.out.print("| 2 - Sal�rio.                                "
-                    + "|\n");
-            System.out.print("| 3 - Sair.                                   "
-                    + "|\n");
-            System.out.print("|---------------------------------------------"
-                    + "|\n");
-            System.out.print("Digite uma op��o: \n");
-            opMenu = L.nextInt();
-
-            switch (opMenu) {
-
-                case 1:
-
-                    limpaTela();
-
-                    System.out.println("Informe o nome do funcion�rio: ");
-                    e.setNome(L.next());
-                    System.out.println("Informe o sobrenome do funcion�rio: ");
-                    e.setSobreNome(L.next());
-
-                    System.out.println("Nome do Funcion�rio: " + e.getNome() 
-                            + " " + e.getSobreNome());
-                    System.out.println("Informe o sal�rio do funcion�rio: ");
-                    e.setSalario(L.nextFloat());
-                    
-                    nomes.add(e.getNome());
-                    sobrenomes.add(e.getSobreNome());
-                    salarios.add(e.getSalario());
-
-                    break;
-
-                case 2:
-
-                    limpaTela();
-
-                    for (int i = 0; i < nomes.size(); i++) {
-                        System.out.println((i + 1) + " - " + nomes.get(i)+ " " 
-                                + sobrenomes.get(i) + "\nSal�rio: "
-                                 + deci.format(salarios.get(i)));
-
-                            System.out.println("Sal�rio anual: "
-                                    + salarios.get(i) * 12);
-                            System.out.println("Sal�rio + 10%: "
-                                    + deci.format(((salarios.get(i) * 12) 
-                                    + (salarios.get(i)* 12 * 0.1))));
-                                    
-                    }
-
-                    break;
-
-                case 3:
-
-                    limpaTela();
-
-                    System.out.print("|-----------------------------|\n");
-                    System.out.print("| Obrigado pela Prefer�ncia <3|\n");
-                    System.out.print("|-----------------------------|\n");
-                    System.exit(0);
-
-                    break;
-
-            }
-
-        } while (opMenu != 0);
+    }
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public static void limpaTela() {
-        for (int i = 0; i <= 25; i++) {
-            System.out.println("\n");
+    public String getSobreNome() {
+        return sobreNome;
+    }
+    public void setSobreNome(String sobreNome) {
+        this.sobreNome = sobreNome;
+    }
+
+    public float getSalario() {
+        return salario;
+    }
+    public void setSalario(float salario) {
+        if (salario < 0) {
+            this.salario = 0;
         }
-    }
+        else{
+            this.salario = salario;
+        }
+    }  
 }
