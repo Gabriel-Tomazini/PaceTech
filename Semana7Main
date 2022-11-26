@@ -8,6 +8,7 @@ public class Empregado {
     public Empregado() {
         
     }
+    
     public String getNome() {
         return nome;
     }
