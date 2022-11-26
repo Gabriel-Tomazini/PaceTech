@@ -1,7 +1,5 @@
 package Semana7;
 
-
-
 public class Empregado {
 
     private String nome, sobreNome;
