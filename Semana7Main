@@ -85,6 +85,14 @@ public class Semana7 {
                     System.exit(0);
 
                     break;
+                    
+                default:
+                    
+                    limpaTela();
+                    
+                    System.out.print("|------------------------|\n");
+                    System.out.print("|Escolha uma opção valida|\n");
+                    System.out.print("|------------------------|\n");
 
             }
 
