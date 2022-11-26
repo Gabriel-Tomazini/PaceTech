@@ -65,9 +65,9 @@ public class Semana7 {
                                 + sobrenomes.get(i) + "\nSal�rio: "
                                  + deci.format(salarios.get(i)));
 
-                            System.out.println("Sal�rio anual: "
+                        System.out.println("Sal�rio anual: "
                                     + salarios.get(i) * 12);
-                            System.out.println("Sal�rio + 10%: "
+                        System.out.println("Sal�rio + 10%: "
                                     + deci.format(((salarios.get(i) * 12) 
                                     + (salarios.get(i)* 12 * 0.1))));
                                     
