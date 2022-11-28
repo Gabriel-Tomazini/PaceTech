@@ -1,13 +1,15 @@
 package Semana7;
 
 import java.util.Scanner;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.text.DecimalFormat;
 
 public class Semana7 {
 
     public static void main(String[] args) {
-
+        
+        Empregado e = new Empregado();
+        
         int opMenu;
         
         ArrayList<String> nomes = new ArrayList<>();
@@ -17,10 +19,8 @@ public class Semana7 {
         Scanner L = new Scanner(System.in);
         DecimalFormat deci = new DecimalFormat("###,##0.00");
 
-        Empregado e = new Empregado();
-
         do {
-
+            
             System.out.print("|---------------------------------------------"
                     + "|\n");
             System.out.print("| 1 - Cadastrar nome e sal�rio do funcion�rio."
@@ -40,12 +40,13 @@ public class Semana7 {
 
                     limpaTela();
 
-                    System.out.println("Informe o nome do funcion�rio: ");
+                    System.out.println("Informe o primeiro nome do funcion�rio: ");
                     e.setNome(L.next());
                     System.out.println("Informe o sobrenome do funcion�rio: ");
                     e.setSobreNome(L.next());
                     System.out.println("Nome do Funcion�rio: " + e.getNome() 
                             + " " + e.getSobreNome());
+                    System.out.println(" ");
                     System.out.println("Informe o sal�rio do funcion�rio: ");
                     e.setSalario(L.nextFloat());
                     
@@ -64,19 +65,16 @@ public class Semana7 {
                         System.out.println((i + 1) + " - " + nomes.get(i) + " "
                                 + sobrenomes.get(i)
                                 + "\nSal�rio mensal: "
-                                + deci.format(salarios.get(i)));
-                        
+                                + deci.format(salarios.get(i)));                      
                         System.out.println("Sal�rio mensal + 10%: " 
-                                + deci.format((salarios.get(i)) 
-                                + salarios.get(i) * 0.1 ));        
-                        
+                                + deci.format(salarios.get(i) 
+                                + salarios.get(i) * 0.1 ));                                
                         System.out.println("Sal�rio anual: "
-                                + deci.format(salarios.get(i) * 12));
-                        
-                        System.out.println("Sal�rio + 10%: "
+                                + deci.format(salarios.get(i) * 12));                       
+                        System.out.println("Sal�rio anual + 10%: "
                                 + deci.format(((salarios.get(i) * 12)
-                                + (salarios.get(i) * 12 * 0.1))));
-                                    
+                                + (salarios.get(i) * 12 * 0.1))));                        
+                                                
                     }
 
                     break;
