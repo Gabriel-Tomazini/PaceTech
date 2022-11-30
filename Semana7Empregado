@@ -1,0 +1,48 @@
+package Semana7Aula;
+
+
+
+public class Empregado {
+
+
+    private String nome, sobreNome;
+    private float salario, aumento;
+
+    public Empregado(String nome, String sobreNome, float salario) {
+        this.nome = nome;
+        this.sobreNome = sobreNome;
+        this.salario = salario;
+    }
+    
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getSobreNome() {
+        return sobreNome;
+    }
+    public void setSobreNome(String sobreNome) {
+        this.sobreNome = sobreNome;
+    }
+
+    public float getSalario() {
+        return salario;
+    }
+    public void setSalario(float salario) {
+        if (salario < 0) {
+            this.salario = 0;
+        }
+        else{
+            this.salario = salario;
+        }  
+    } 
+    
+    public float aumento(float salario){
+        
+        aumento = (float) ((salario * 12) + (salario * 12 * 0.1));
+        return aumento;
+    }     
+}
